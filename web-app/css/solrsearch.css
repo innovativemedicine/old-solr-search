@@ -1,0 +1,256 @@
+.refresh .filter .count {
+	color: red;
+	
+}
+
+.show-hidden .count:before,
+.filter .count:before {
+
+}
+
+.show-hidden .count:after,
+.filter .count:after {
+	
+}
+
+.filter.hidden {
+	display: none;
+}
+
+.custom-range-menu,
+.facet-search-menu {
+	background: white;
+}
+
+.facet-search-menu .search {
+	display: block;
+	width: 100%;
+	background: #fff url(../images/solrsearch-sprite.png) 0 -48px no-repeat;
+	padding-left: 16px;
+}
+
+.waiting .facet-search-menu .search {
+	background: #fff url(../images/spinner.gif) 0 0 no-repeat;
+}
+
+.facet-search-menu .results {
+	background: #eee;
+	max-height: 200px;
+	overflow: auto;
+}
+
+.facet-search-menu .results .witness {
+	background: #fff url(../images/spinner.gif) center center no-repeat;
+	height: 20px;
+	width: 100%;
+}
+
+.facet-search-menu .results .witness.failed,
+.facet-search-menu .results .witness.finished {
+	display: none;
+}
+
+.custom-range-menu {
+	border: none;
+	padding: 0;
+	margin: 0;
+}
+
+.custom-range-menu-container a.create-filter,
+.custom-range-menu-container a.add-filter,
+.custom-range-menu-container a.remove-filter {
+	background: url(../images/solrsearch-sprite.png) 0 0 no-repeat;
+}
+
+.custom-range-menu-container a.create-filter {
+	display: block;
+	height: 16px;
+	padding-left: 16px;
+}
+
+.custom-range-menu-container a.add-filter,
+.custom-range-menu-container a.remove-filter {
+	display: inline-block;
+	height: 16px;
+	width: 16px;
+}
+
+.custom-range-menu-container a.remove-filter { background-position: 0 -16px; }
+.custom-range-menu-container a.add-filter { background-position: 0 -32px; }
+
+.custom-range-menu-container a.add-filter span,
+.custom-range-menu-container a.remove-filter span {
+	position: absolute;
+	left: -9999px;
+	top: -9999px;
+}
+
+.custom-range-menu .error {
+	display: block;
+	padding-left: 1.5em;
+	color: #f00;
+}
+
+.facet .range:before { content: "("; }
+.facet .range:after  { content: ")"; }
+.facet .range {
+	font-style: italic;
+}
+
+
+.facetItemsList.idListField {
+    background: none;
+    padding: 0;
+}
+
+.facetItemsList.idListField input {
+    width: auto;
+}
+
+.facetItemsList.idListField textarea.ids {
+    width: 370px;
+}
+
+a.uploading {
+    background: url(../images/spinner.gif) 0 center no-repeat;
+    padding-left: 16px;
+}
+
+
+.filterGroup .filter,
+.filterGroup .custom-range-menu {
+    background-color: #ffc;
+}
+.facets ul li .custom-range-menu input,
+.facets ul li .hidden-filter-menu input.search {
+    background-color: #fff;
+}
+
+.facets,
+.facets ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.facets li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.facets .facetGroup {
+    clear: both;
+}
+        
+.facets .facetGroup li {
+    background-color: 	 #3333FF;
+ -webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+ 
+    display: block;
+    float: left;
+    width: 200px;
+  
+    padding: 4px;
+    padding-bottom: 10px;
+}
+
+.facets .facetGroup li.double-wide {
+    width: 590px;
+}
+
+legend {
+    color: #444;
+    font-weight: bold;
+    
+}
+
+.facet-search-menu {
+    top: 0px;
+    left: -5px;
+    padding: 10px;
+    width: 100%;
+    box-shadow: 2px 2px 5px #000;
+    -webkit-box-shadow: 2px 2px 5px #000;
+    -moz-box-shadow: 2px 2px 5px #000;
+}
+
+.facet-search-menu .results {
+	border: solid 1px #fff;
+	box-shadow: 0 0 3px #555;
+	-webkit-box-shadow: 0 0 3px #555;
+	-moz-box-shadow: 0 0 3px #555;
+}
+
+.facet-search-menu,
+.facet-search-menu .filter {
+    background: #ffa;
+}
+
+.facet-search-menu .search {
+    width: 95%;
+}
+
+.general-search-fields {
+    width: 500px;
+}
+
+
+.main-paginator {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.search-fields {
+}
+
+.search-fields .query {
+    width: 500px;
+}
+
+.search-fields .filter {
+    padding: 5px;
+    font-weight: bold;
+    font-size: 120%;
+    color: #444;
+}
+
+.filters {
+    padding: 5px;
+}
+
+.file {
+    font-weight: bold;
+    color: #444;
+}
+
+.collapsed .searchSectionTitle {
+    background-color: #EEE;
+    border-color: #999;
+    border-left: 3px solid #999;
+    border-top: 3px solid #999;
+    color: #555;
+}
+
+
+
+
+.gene-id-list-fields {
+    width: 400px;
+}
+
+.general-search-fields input {
+    display: block;
+    width: 480px;
+}
+.gene-id-list-fields textarea {
+    display: block;
+    width: 390px;
+}
+.gene-id-list-fields label {
+    display: block;
+}
