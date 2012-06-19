@@ -2,7 +2,6 @@
 *.war
 .classpath
 .DS_Store
-.project
 .settings
 /*.launch
 /*.tmproj
