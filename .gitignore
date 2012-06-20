@@ -1,6 +1,5 @@
 *.iws
 *.war
-.classpath
 .DS_Store
 .settings
 /*.launch
