@@ -46,6 +46,8 @@ class QueryStringVisitor implements SolrQueryVisitor {
 			add("qt", escape(query.queryType))
 		if (query.outputType)
 			add("wt", escape(query.outputType))
+    if (query.facetMethod)
+      add("facet.method", escape(query.facetMethod))
 		if (query.fields) {
 			add("fl", query.fields.findAll { name ->
 				if (!isValidFieldName(name)) {

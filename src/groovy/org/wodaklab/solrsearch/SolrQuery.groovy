@@ -21,6 +21,8 @@ class SolrQuery implements Visitable {
 	Integer rows
 	Integer offset
 	String queryType
+  String facetMethod = null
+  
 	private String outputType = "json"
 	Set<String> fields = [] as Set
 	Map<String,Filter> filter = LazyMap.decorate([:], new Transformer() {

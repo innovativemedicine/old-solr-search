@@ -38,6 +38,8 @@ class SolrQueryCopierVisitor implements SolrQueryVisitor {
 				queryType = other.queryType
 			if (other.selectUrl)
 				selectUrl = other.selectUrl
+      if (other.facetMethod)
+        facetMethod = other.facetMethod
 			fields.addAll(other.fields)
 			stats.addAll(other.stats)
 		}
