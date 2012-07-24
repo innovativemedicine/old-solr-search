@@ -941,7 +941,7 @@ solrsearch.updateFacetCounts = function(result, form) {
 					 (values[0] == "(" && values[values.length - 1] == ")" &&
 							 fq[field][values.substring(1, values.length - 1)]));
 		if (filter) {
-			filter.find(".count").text(addCommas(count));
+			filter.find(".count").text(count);
 		}
 	}
 	
@@ -952,7 +952,7 @@ solrsearch.updateFacetCounts = function(result, form) {
 				count = enums[i + 1],
 				filter = fq[field] && (fq[field][values] || fq[field]['"' + values + '"']);
 			if (filter)
-				filter.find(".count").text(addCommas(count));
+				filter.find(".count").text(count);
 		}
 	}
 	

@@ -171,8 +171,8 @@ class SolrSearchTagLib {
 		
 		def defaultMessage = valueSetToMessage(vals, "solrsearch.valueset", "")
 		def message = valueSetToMessage(vals, code, defaultMessage)
-		
-		out << message
+		// !!! REMOVING COMAS so years look like years....
+		out << message.replaceAll(/,/,"")
 	}
 	
 	private def titleExtractor = /%([^%]*)\/([^%]*)%/

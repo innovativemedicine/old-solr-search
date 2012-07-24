@@ -153,8 +153,8 @@ class SolrSearchService {
 		def base = query.selectUrl ?: SolrSearchUtils.config.solrSearch.url.select
 		def getLimit = SolrSearchUtils.config.solrSearch.url.limit?: 0
 		def data
-		
-		
+		//log.error("\nAbout to do regex with:\n$base?$queryString\n")
+	//queryString = queryString.replaceAll("3A-1", "3A\\-1")
 		log.error("\nQuerying Solr with:\n$base?$queryString\n")
 		
 		if (!getLimit || base.size() + queryString.size() + 1 < getLimit) {
